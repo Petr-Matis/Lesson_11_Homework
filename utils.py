@@ -12,7 +12,7 @@ def get_all():
     return load_candidates()
 
 
-def get_candidate_by_pk(id):
+def get_candidate_by_id(id):
     """возвращаеткандидата по 'id' """
 
     for candidate in get_all():
@@ -29,7 +29,7 @@ def get_candidates_by_name(candidate_name):
     return result
 
 
-def get_candidates_by_skills(skill):
+def get_candidates_by_skill(skill):
     """возвращает список кандидатов по 'skill' """
     candidates = []
     for candidate in get_all():
